@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:cursive;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    width:100%;
+    background:linear-gradient(135deg, #000000, #111111 50%, #060606);
+    background-attachment:fixed;
+}
+
+.container{
+    background:rgba(20, 20, 20, 0.72);
+    width:450px;
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border:1px solid rgba(255, 255, 255, 0.14);
+}
+
+.input-panel,
+.tasks-panel{
+    background:rgba(255, 255, 255, 0.08);
+    border:1px solid rgba(255, 255, 255, 0.12);
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.tasks-panel{
+    min-height:220px;
+}
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#e76d0a;
+}
+
+.input-area{
+    display:flex;
+    gap:10px;
+    margin-bottom:0;
+    padding:10px;
+    border-radius:8px;
+    background:rgba(255, 255, 255, 0.12);
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+input{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+    background:rgba(255, 255, 255, 1);
+    color:#222;
+    opacity:1;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    color:white;
+    background:#561501;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:rgba(255, 255, 255, 0.08);
+    color:#f5f5f5;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:8px;
+    border:1px solid rgba(255, 255, 255, 0.12);
+}
+
+.task{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.task span{
+    color:#f5f5f5;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:#b0b0b0;
+}
+
+.buttons{
+    display:flex;
+    gap:5px;
+    border-radius: 25px;
+}
+
+.edit{
+    background:#28a745;
+}
+
+.delete{
+    background:#dc3545;
+}
+
+.background-img{
+    max-height: fit-content;
+    max-width: fit-content;
+}
